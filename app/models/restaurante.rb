@@ -3,6 +3,12 @@
 class Restaurante < ActiveRecord::Base
   # attr_accessible :title, :body
 
+  #informando que tem varias qualificações (relacionamento de tabela)
+  has_many :qualificacoes
+  #informando que um restaurante tem varios pratos e um prato varios restaurantes
+  has_and_belongs_to_many :pratos
+
+
   #deixa disponivel para poder grava no banco aparti de um formulario ou iput url ou hash
   attr_accessible :nome, :endereco, :especialidade
 
