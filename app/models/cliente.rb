@@ -1,3 +1,4 @@
+#encoding:utf-8
 class Cliente < ActiveRecord::Base
   # attr_accessible :title, :body
     #deixa disponivel para poder grava no banco aparti de um formulario ou iput url ou hash
@@ -7,7 +8,7 @@ class Cliente < ActiveRecord::Base
 
   	#validações
   	validates_presence_of :nome, message: " - deve ser preenchido"
-  	validate_uniqueness_of :nome, message: "- nome já cadastrado"
-  	validate_numericality_of :idade, greater_than: 0, less_than: 100, message: " - deve ser numero entre 0 e 100"
+  	validates_uniqueness_of :nome, message: "- nome já cadastrado"
+  	validates_numericality_of :idade, greater_than: 0, less_than: 100, message: " - deve ser numero entre 0 e 100"
 
 end
