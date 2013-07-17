@@ -8012,3 +8012,405 @@ Served asset /restaurantes.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 22:18:53 -0300
 Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2013-07-16 22:24:06 -0300
+Connecting to database specified by database.yml
+Processing by RestaurantesController#index as HTML
+  [1m[36mRestaurante Load (0.1ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes` ORDER BY nome[0m
+  Rendered restaurantes/index.html.erb within layouts/application (56.1ms)
+Completed 200 OK in 164ms (Views: 90.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 22:24:07 -0300
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 22:24:07 -0300
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 22:24:07 -0300
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 22:24:07 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2013-07-16 22:24:07 -0300
+Served asset /restaurantes.js - 304 Not Modified (2ms)
+
+
+Started GET "/restaurantes/5" for 127.0.0.1 at 2013-07-16 22:24:10 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mRestaurante Load (0.6ms)[0m  SELECT `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 5 LIMIT 1
+  Rendered restaurantes/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 17ms (Views: 11.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 22:24:10 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 22:24:10 -0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 22:24:10 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2013-07-16 22:24:10 -0300
+Served asset /restaurantes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 22:24:10 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2013-07-16 22:28:29 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[36mRestaurante Load (0.2ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes` ORDER BY nome[0m
+  Rendered restaurantes/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 22:28:30 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 22:28:30 -0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 22:28:30 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2013-07-16 22:28:30 -0300
+Served asset /restaurantes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 22:28:30 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/restaurantes/new" for 127.0.0.1 at 2013-07-16 22:28:41 -0300
+Processing by RestaurantesController#new as HTML
+  Rendered restaurantes/_form.html.erb (5.3ms)
+  Rendered restaurantes/new.html.erb within layouts/application (53.0ms)
+Completed 200 OK in 63ms (Views: 62.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 22:28:41 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 22:28:41 -0300
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 22:28:41 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 22:28:41 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2013-07-16 22:28:41 -0300
+Served asset /restaurantes.js - 304 Not Modified (3ms)
+
+
+Started GET "/restaurantes/5" for 127.0.0.1 at 2013-07-16 22:35:43 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mRestaurante Load (0.2ms)[0m  SELECT `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 5 LIMIT 1
+  Rendered restaurantes/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 22:35:43 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 22:35:43 -0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 22:35:43 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2013-07-16 22:35:43 -0300
+Served asset /restaurantes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 22:35:43 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/restaurantes/5.xml" for 127.0.0.1 at 2013-07-16 22:35:46 -0300
+Processing by RestaurantesController#show as XML
+  Parameters: {"id"=>"5"}
+  [1m[36mRestaurante Load (0.8ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 5 LIMIT 1[0m
+Completed 200 OK in 25ms (Views: 21.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/restaurantes/5.json" for 127.0.0.1 at 2013-07-16 22:35:50 -0300
+Processing by RestaurantesController#show as JSON
+  Parameters: {"id"=>"5"}
+  [1m[35mRestaurante Load (0.2ms)[0m  SELECT `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 5 LIMIT 1
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurantes/" for 127.0.0.1 at 2013-07-16 22:35:58 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[36mRestaurante Load (6.0ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes` ORDER BY nome[0m
+  Rendered restaurantes/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 27ms (Views: 20.7ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 22:35:58 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 22:35:58 -0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 22:35:58 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2013-07-16 22:35:58 -0300
+Served asset /restaurantes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 22:35:58 -0300
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2013-07-16 22:36:01 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[35mRestaurante Load (0.2ms)[0m  SELECT `restaurantes`.* FROM `restaurantes` ORDER BY nome
+  Rendered restaurantes/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 22:36:01 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 22:36:01 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 22:36:01 -0300
+Served asset /application.js - 304 Not Modified (52ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 22:36:01 -0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2013-07-16 22:36:01 -0300
+Served asset /restaurantes.js - 304 Not Modified (0ms)
+
+
+Started GET "/restaurantes.json" for 127.0.0.1 at 2013-07-16 22:36:02 -0300
+Processing by RestaurantesController#index as JSON
+  [1m[36mRestaurante Load (0.6ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes` ORDER BY nome[0m
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/restaurantes.xml" for 127.0.0.1 at 2013-07-16 22:36:06 -0300
+Processing by RestaurantesController#index as XML
+  [1m[35mRestaurante Load (1.8ms)[0m  SELECT `restaurantes`.* FROM `restaurantes` ORDER BY nome
+Completed 200 OK in 17ms (Views: 14.3ms | ActiveRecord: 1.8ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2013-07-16 22:55:06 -0300
+Connecting to database specified by database.yml
+Processing by RestaurantesController#index as HTML
+  [1m[36mRestaurante Load (0.1ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes` ORDER BY nome[0m
+  Rendered restaurantes/index.html.erb within layouts/application (19.3ms)
+Compiled clientes.js  (479ms)  (pid 23785)
+Compiled qualificacoes.js  (182ms)  (pid 23785)
+Compiled application.js  (718ms)  (pid 23785)
+Completed 200 OK in 910ms (Views: 862.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 22:55:08 -0300
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 22:55:08 -0300
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 22:55:08 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2013-07-16 22:55:08 -0300
+Served asset /clientes.js - 200 OK (2ms)
+
+
+Started GET "/assets/qualificacoes.js?body=1" for 127.0.0.1 at 2013-07-16 22:55:08 -0300
+Served asset /qualificacoes.js - 200 OK (2ms)
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2013-07-16 22:55:08 -0300
+Served asset /restaurantes.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 22:55:08 -0300
+Served asset /application.js - 304 Not Modified (46ms)
+
+
+Started GET "/clientes" for 127.0.0.1 at 2013-07-16 22:55:16 -0300
+Processing by ClientesController#index as HTML
+  [1m[35mCliente Load (0.8ms)[0m  SELECT `clientes`.* FROM `clientes` 
+  Rendered clientes/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 34ms (Views: 15.7ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 22:55:16 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 22:55:16 -0300
+Served asset /jquery.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 22:55:16 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 22:55:16 -0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2013-07-16 22:55:16 -0300
+Served asset /restaurantes.js - 304 Not Modified (0ms)
+
+
+Started GET "/qualificacoes" for 127.0.0.1 at 2013-07-16 22:55:35 -0300
+
+ActionController::RoutingError (undefined method `validate_associated' for #<Class:0xa8e6ca0>):
+  app/models/qualificacao.rb:17:in `<class:Qualificacao>'
+  app/models/qualificacao.rb:1:in `<top (required)>'
+  app/controllers/qualificacoes_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/qualificacoes" for 127.0.0.1 at 2013-07-16 22:55:59 -0300
+Processing by QualificacoesController#index as HTML
+  [1m[36mQualificacao Load (0.3ms)[0m  [1mSELECT `qualificacoes`.* FROM `qualificacoes` [0m
+  Rendered qualificacoes/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 18ms (Views: 12.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 22:55:59 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 22:55:59 -0300
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 22:55:59 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2013-07-16 22:55:59 -0300
+Served asset /clientes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/qualificacoes.js?body=1" for 127.0.0.1 at 2013-07-16 22:55:59 -0300
+Served asset /qualificacoes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2013-07-16 22:55:59 -0300
+Served asset /restaurantes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 22:55:59 -0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/qualificacoes/new" for 127.0.0.1 at 2013-07-16 22:56:49 -0300
+Processing by QualificacoesController#new as HTML
+  Rendered qualificacoes/_form.html.erb (16.0ms)
+  Rendered qualificacoes/new.html.erb within layouts/application (65.3ms)
+Completed 200 OK in 91ms (Views: 75.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 22:56:49 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 22:56:49 -0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 22:56:49 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2013-07-16 22:56:49 -0300
+Served asset /clientes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/qualificacoes.js?body=1" for 127.0.0.1 at 2013-07-16 22:56:49 -0300
+Served asset /qualificacoes.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 22:56:49 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2013-07-16 22:56:49 -0300
+Served asset /restaurantes.js - 304 Not Modified (0ms)
+
+
+Started GET "/qualificacoes/new" for 127.0.0.1 at 2013-07-16 22:58:25 -0300
+Processing by QualificacoesController#new as HTML
+  Rendered qualificacoes/_form.html.erb (4.7ms)
+  Rendered qualificacoes/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-16 22:58:25 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-16 22:58:25 -0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-16 22:58:25 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2013-07-16 22:58:25 -0300
+Served asset /clientes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/qualificacoes.js?body=1" for 127.0.0.1 at 2013-07-16 22:58:25 -0300
+Served asset /qualificacoes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2013-07-16 22:58:25 -0300
+Served asset /restaurantes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-16 22:58:25 -0300
+Served asset /application.js - 304 Not Modified (2ms)

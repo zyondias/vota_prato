@@ -14,7 +14,7 @@ class Qualificacao < ActiveRecord::Base
 
   #validadndo o relacionamento
   validates_presence_of :cliente_id, :restaurante_id
-  validate_associated :cliente, :restaurante
+  validates_associated :cliente, :restaurante
 
   validates_numericality_of :nota, greater_than_or_equal_to: 0, less_than_or_equal_to: 10, message: "- deve ser um numero"
   validates_numericality_of :valor_gasto, greater_than: 0, message: " deve ser numero maior que 0"

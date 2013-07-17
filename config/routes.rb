@@ -1,4 +1,10 @@
 VotaPrato::Application.routes.draw do
+  resources :qualificacoes
+
+
+  resources :clientes
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -58,5 +64,5 @@ VotaPrato::Application.routes.draw do
 
   #rotas
   resources :restaurantes
-  resources :qualificacoes
+  #resources :qualificacoes
 end
