@@ -7,9 +7,10 @@ class Qualificacao < ActiveRecord::Base
    belongs_to :cliente
    #informando que essa class pertece a um restaurante
    belongs_to :restaurante
+   #para ser torna um campo unico na tabela cometarios que era usada pelo restaurante e qualificacao
+   has_many :comentarios, as: :comentavel
 
   #validacoes 
-  validates_presence_of :nome, message:" - deve ser preenchido "
   validates_presence_of :valor_gasto, message:" - deve ser preenchido"
 
   #validadndo o relacionamento

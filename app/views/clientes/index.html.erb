@@ -4,7 +4,7 @@
   <tr>
     <th>Nome</th>
     <th>Idade</th>
-    <th></th>
+    <th>Criado em</th>
     <th></th>
     <th></th>
   </tr>
@@ -13,6 +13,7 @@
   <tr>
     <td><%= cliente.nome %></td>
     <td><%= cliente.idade %></td>
+    <td><%= data_formatada cliente.created_at %></td>
     <td><%= link_to 'Show', cliente %></td>
     <td><%= link_to 'Edit', edit_cliente_path(cliente) %></td>
   </tr>

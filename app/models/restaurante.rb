@@ -5,6 +5,9 @@ class Restaurante < ActiveRecord::Base
 
   #informando que tem varias qualificações (relacionamento de tabela)
   has_many :qualificacoes
+
+  #para ser torna um campo unico na tabela cometarios que era usada pelo restaurante e qualificacao
+   has_many :comentarios, as: :comentavel
   #informando que um restaurante tem varios pratos e um prato varios restaurantes
   has_and_belongs_to_many :pratos
 

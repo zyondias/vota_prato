@@ -12,12 +12,26 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :cliente_id %><br />
-    <%= f.number_field :cliente_id %>
+    <!--Verificando veio aparti de cliente para deixar cliente peenchido -->
+    <% if @qualificacao.cliente %>
+      <%= f.hidden_field 'cliente_id' %>
+    <%else%>
+      <!--Trazendo o nome do cliente inves do ID-->
+     <P><%= f.label :cliente_id %><br />
+      <%=f.collection_select(:cliente_id, @clientes, :id, :nome, {:prompt => true}) %>
+     </P>
+    <%end%>
   </div>
   <div class="field">
+    <!--Verificando se veio aparti de um restaurante para deixar o campo restaurante prenchido-->
+    <%if @qualificacao.restaurante%>
+        <%= f.hidden_field 'restaurante_id' %>
+    <%else%>    
     <%= f.label :restaurante_id %><br />
-    <%= f.number_field :restaurante_id %>
+      <!--Trazendo o nome do Restaurante inves do ID-->
+                            <!--Primeiro parametro é o que vou tarbalha em cada interacao, o segundo é oque estou buscando, o teceiro parametro (id) é o valor da lita e nome é o texto  q vai aparecer na lista, o prompt serve para deixaar o valor em branco em cima -->
+      <%= f.collection_select(:restaurante_id, @restaurantes, :id, :nome, {:prompt => true})%>
+    <%end%>
   </div>
   <div class="field">
     <%= f.label :nota %><br />

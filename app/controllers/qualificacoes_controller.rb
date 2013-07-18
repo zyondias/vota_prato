@@ -25,6 +25,14 @@ class QualificacoesController < ApplicationController
   # GET /qualificacoes/new.json
   def new
     @qualificacao = Qualificacao.new
+    preparar_form
+    #preenchendo dados automaticos de cliente ou restaurante caso venha de alum dessas paginas
+    if params[:cliente] 
+      @qualificacao.cliente = Cliente.find(params[:cliente])
+    end
+    if params[:restaurante]
+      @qualificacao.restaurante = Restaurante.find(params[:restaurante])
+    end
 
     respond_to do |format|
       format.html # new.html.erb
@@ -34,6 +42,7 @@ class QualificacoesController < ApplicationController
 
   # GET /qualificacoes/1/edit
   def edit
+    preparar_form
     @qualificacao = Qualificacao.find(params[:id])
   end
 
@@ -47,6 +56,8 @@ class QualificacoesController < ApplicationController
         format.html { redirect_to @qualificacao, notice: 'Qualificacao was successfully created.' }
         format.json { render json: @qualificacao, status: :created, location: @qualificacao }
       else
+        #instanciando listas caso de erro pois sera necessario essas variaveis na view
+        preparar_form
         format.html { render action: "new" }
         format.json { render json: @qualificacao.errors, status: :unprocessable_entity }
       end
@@ -63,6 +74,8 @@ class QualificacoesController < ApplicationController
         format.html { redirect_to @qualificacao, notice: 'Qualificacao was successfully updated.' }
         format.json { head :no_content }
       else
+        #instanciando listas caso de erro pois sera necessario essas variaveis na view
+        preparar_form
         format.html { render action: "edit" }
         format.json { render json: @qualificacao.errors, status: :unprocessable_entity }
       end
@@ -80,4 +93,11 @@ class QualificacoesController < ApplicationController
       format.json { head :no_content }
     end
   end
+  private 
+  def preparar_form
+    #populando lista de cliente e restaurante
+    @clientes = Cliente.order :nome
+    @restaurantes = Restaurante.order :nome
+  end
+
 end
