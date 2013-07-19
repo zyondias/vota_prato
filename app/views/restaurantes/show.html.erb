@@ -8,6 +8,9 @@
 <p>
 	<b>Especiliadade: </b><%= @restaurante.especialidade %>
 </p>
+<p>
+	<%= comentarios @restaurante %>
+</p>
 
 <b>Nota media</b>
 	<%= @restaurante.qualificacoes.average(:nota)%><br/>
@@ -16,6 +19,8 @@
 <b>Preco medio</b>
 	<%= @restaurante.qualificacoes.average(:valor_gasto) %><br/>
 
-<%= link_to "Nova qualificacao", :controller =>'qualificacoes', :action =>'new',:restaurante => @restaurante %>
+<%= link_to "Nova qualificacao", :controller =>'qualificacoes', :action =>'new',:restaurante => @restaura %>
+<%= novo_comentario @restaurante %>
+
 <%= link_to 'Editar', action: 'edit', id: @restaurante %>
 <%= link_to 'Votar', action: 'index' %>

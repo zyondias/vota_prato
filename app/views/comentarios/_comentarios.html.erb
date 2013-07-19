@@ -1,0 +1,13 @@
+<div id="comentarios">
+	<h3>Comentarios</h3>
+	<% if comentarios.empty?%>
+	 Nenhum comentario
+	<%else%>
+	  <%= #caso tenha comentarios ele ira renderizar fazendo uma convesao de nome buscado minha partiel comentario
+	  render comentarios %>
+	<%end%>  
+</div>
+
+<% content_for :css do %>
+	<link rel="stylesheet" href="/stylesheets/comentarios.css">	
+<%end%>

@@ -77,6 +77,7 @@ class ComentariosController < ApplicationController
 
     respond_to do |format|
       format.html { redirect_to comentarios_url }
+      format.js {head :ok}
       format.json { head :no_content }
     end
   end
