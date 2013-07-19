@@ -7,6 +7,8 @@
  <%end%>
 
  <% content_for :js do %>
- 	$('form').bind('ajax:complete', 
- 		function
- 	)
+ 	$('form').bind('ajax:complete', function(xhr, result){
+ 	 $('#comentarios').replaceWith(result.responseText);
+ 	 $('textarea').val("");
+     });
+  <% end %>

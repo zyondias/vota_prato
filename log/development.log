@@ -34370,3 +34370,110 @@ Served asset /restaurantes.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-19 19:13:34 -0300
 Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/restaurantes/8" for 127.0.0.1 at 2013-07-19 19:50:10 -0300
+Connecting to database specified by database.yml
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mRestaurante Load (0.1ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 8 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 8 AND `comentarios`.`comentavel_type` = 'Restaurante'
+  Rendered comentarios/_comentarios.html.erb (24.6ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT AVG(`qualificacoes`.`nota`) AS avg_id FROM `qualificacoes` WHERE `qualificacoes`.`restaurante_id` = 8[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `qualificacoes` WHERE `qualificacoes`.`restaurante_id` = 8
+  [1m[36m (0.1ms)[0m  [1mSELECT AVG(`qualificacoes`.`valor_gasto`) AS avg_id FROM `qualificacoes` WHERE `qualificacoes`.`restaurante_id` = 8[0m
+  Rendered comentarios/_novo_comentario.html.erb (20.8ms)
+  Rendered restaurantes/show.html.erb within layouts/application (171.5ms)
+Completed 200 OK in 335ms (Views: 252.1ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-19 19:50:11 -0300
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-19 19:50:11 -0300
+Served asset /jquery.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-19 19:50:11 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2013-07-19 19:50:11 -0300
+Served asset /clientes.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/comentarios.js?body=1" for 127.0.0.1 at 2013-07-19 19:50:11 -0300
+Served asset /comentarios.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/qualificacoes.js?body=1" for 127.0.0.1 at 2013-07-19 19:50:11 -0300
+Served asset /qualificacoes.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2013-07-19 19:50:11 -0300
+Served asset /restaurantes.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-19 19:50:11 -0300
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started POST "/comentarios" for 127.0.0.1 at 2013-07-19 19:50:18 -0300
+Processing by ComentariosController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SATSp176rEHX22PAIWI6JPp+mp8X82Ydu2HiP3m7fr4=", "comentario"=>{"comentavel_id"=>"8", "comentavel_type"=>"Restaurante", "conteudo"=>"Bom"}, "commit"=>"Create Comentario"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (10.4ms)[0m  [1mINSERT INTO `comentarios` (`comentavel_id`, `comentavel_type`, `conteudo`, `created_at`, `updated_at`) VALUES (8, 'Restaurante', 'Bom', '2013-07-19 22:50:18', '2013-07-19 22:50:18')[0m
+  [1m[35m (24.0ms)[0m  COMMIT
+  [1m[36mRestaurante Load (0.2ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 8 LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 8 AND `comentarios`.`comentavel_type` = 'Restaurante'
+  [1m[36mComentario Load (0.5ms)[0m  [1mSELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 8 AND `comentarios`.`comentavel_type` = 'Restaurante'[0m
+  Rendered comentarios/_comentario.html.erb (2.4ms)
+  Rendered comentarios/_comentarios.html.erb (10.0ms)
+  Rendered comentarios/create.js.erb within layouts/application (75.6ms)
+Completed 200 OK in 131ms (Views: 79.1ms | ActiveRecord: 35.8ms)
+
+
+Started POST "/comentarios" for 127.0.0.1 at 2013-07-19 19:50:23 -0300
+Processing by ComentariosController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SATSp176rEHX22PAIWI6JPp+mp8X82Ydu2HiP3m7fr4=", "comentario"=>{"comentavel_id"=>"8", "comentavel_type"=>"Restaurante", "conteudo"=>"Legal"}, "commit"=>"Create Comentario"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `comentarios` (`comentavel_id`, `comentavel_type`, `conteudo`, `created_at`, `updated_at`) VALUES (8, 'Restaurante', 'Legal', '2013-07-19 22:50:23', '2013-07-19 22:50:23')[0m
+  [1m[35m (29.2ms)[0m  COMMIT
+  [1m[36mRestaurante Load (0.2ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 8 LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 8 AND `comentarios`.`comentavel_type` = 'Restaurante'
+  [1m[36mComentario Load (0.8ms)[0m  [1mSELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 8 AND `comentarios`.`comentavel_type` = 'Restaurante'[0m
+  Rendered comentarios/_comentario.html.erb (2.3ms)
+  Rendered comentarios/_comentarios.html.erb (9.1ms)
+  Rendered comentarios/create.js.erb within layouts/application (13.3ms)
+Completed 200 OK in 51ms (Views: 14.8ms | ActiveRecord: 31.8ms)
+
+
+Started POST "/comentarios" for 127.0.0.1 at 2013-07-19 19:50:29 -0300
+Processing by ComentariosController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SATSp176rEHX22PAIWI6JPp+mp8X82Ydu2HiP3m7fr4=", "comentario"=>{"comentavel_id"=>"8", "comentavel_type"=>"Restaurante", "conteudo"=>"Gostei"}, "commit"=>"Create Comentario"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `comentarios` (`comentavel_id`, `comentavel_type`, `conteudo`, `created_at`, `updated_at`) VALUES (8, 'Restaurante', 'Gostei', '2013-07-19 22:50:29', '2013-07-19 22:50:29')[0m
+  [1m[35m (16.8ms)[0m  COMMIT
+  [1m[36mRestaurante Load (0.1ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 8 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 8 AND `comentarios`.`comentavel_type` = 'Restaurante'
+  [1m[36mComentario Load (0.3ms)[0m  [1mSELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 8 AND `comentarios`.`comentavel_type` = 'Restaurante'[0m
+  Rendered comentarios/_comentario.html.erb (1.3ms)
+  Rendered comentarios/_comentarios.html.erb (4.6ms)
+  Rendered comentarios/create.js.erb within layouts/application (6.5ms)
+Completed 200 OK in 28ms (Views: 7.2ms | ActiveRecord: 18.1ms)
+
+
+Started POST "/comentarios" for 127.0.0.1 at 2013-07-19 19:51:04 -0300
+Processing by ComentariosController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SATSp176rEHX22PAIWI6JPp+mp8X82Ydu2HiP3m7fr4=", "comentario"=>{"comentavel_id"=>"8", "comentavel_type"=>"Restaurante", "conteudo"=>"Comida é gostosa\r\n"}, "commit"=>"Create Comentario"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `comentarios` (`comentavel_id`, `comentavel_type`, `conteudo`, `created_at`, `updated_at`) VALUES (8, 'Restaurante', 'Comida é gostosa\r\n', '2013-07-19 22:51:04', '2013-07-19 22:51:04')[0m
+  [1m[35m (17.1ms)[0m  COMMIT
+  [1m[36mRestaurante Load (0.2ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 8 LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 8 AND `comentarios`.`comentavel_type` = 'Restaurante'
+  [1m[36mComentario Load (0.7ms)[0m  [1mSELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 8 AND `comentarios`.`comentavel_type` = 'Restaurante'[0m
+  Rendered comentarios/_comentario.html.erb (3.7ms)
+  Rendered comentarios/_comentarios.html.erb (10.0ms)
+  Rendered comentarios/create.js.erb within layouts/application (13.5ms)
+Completed 200 OK in 37ms (Views: 14.5ms | ActiveRecord: 19.5ms)
