@@ -33,6 +33,7 @@ class RestaurantesController < ApplicationController
 
 	#metodo pessistir na base da dados o restaurante
 	def create
+	   @restaurante = Restaurante.new(params[:restaurante])
 		if @restaurante.save
 			redirect_to(action:'show', id:@restaurante)		
 		else

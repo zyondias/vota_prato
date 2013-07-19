@@ -33602,3 +33602,771 @@ Processing by RestaurantesController#index as HTML
   [1m[35mRestaurante Load (0.6ms)[0m  SELECT `restaurantes`.* FROM `restaurantes` ORDER BY nome
   Rendered restaurantes/index.html.erb within layouts/application (9.3ms)
 Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2013-07-19 18:56:39 -0300
+Connecting to database specified by database.yml
+Processing by RestaurantesController#index as HTML
+  [1m[36mRestaurante Load (43.9ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes` ORDER BY nome[0m
+  Rendered restaurantes/index.html.erb within layouts/application (159.0ms)
+Completed 200 OK in 643ms (Views: 472.6ms | ActiveRecord: 85.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-19 18:56:41 -0300
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2013-07-19 18:56:41 -0300
+Served asset /restaurantes.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-19 18:56:41 -0300
+Served asset /jquery.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-19 18:56:41 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/qualificacoes.js?body=1" for 127.0.0.1 at 2013-07-19 18:56:41 -0300
+Served asset /qualificacoes.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-19 18:56:41 -0300
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/comentarios.js?body=1" for 127.0.0.1 at 2013-07-19 18:56:41 -0300
+Served asset /comentarios.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2013-07-19 18:56:41 -0300
+Served asset /clientes.js - 304 Not Modified (2ms)
+
+
+Started GET "/restaurantes/new" for 127.0.0.1 at 2013-07-19 18:56:43 -0300
+Processing by RestaurantesController#new as HTML
+  Rendered restaurantes/_form.html.erb (5.1ms)
+  Rendered restaurantes/new.html.erb within layouts/application (83.6ms)
+Completed 200 OK in 118ms (Views: 117.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-19 18:56:43 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-19 18:56:43 -0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-19 18:56:43 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/qualificacoes.js?body=1" for 127.0.0.1 at 2013-07-19 18:56:43 -0300
+Served asset /qualificacoes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2013-07-19 18:56:43 -0300
+Served asset /restaurantes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2013-07-19 18:56:43 -0300
+Served asset /clientes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comentarios.js?body=1" for 127.0.0.1 at 2013-07-19 18:56:43 -0300
+Served asset /comentarios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-19 18:56:43 -0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/restaurantes" for 127.0.0.1 at 2013-07-19 18:56:52 -0300
+Processing by RestaurantesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SATSp176rEHX22PAIWI6JPp+mp8X82Ydu2HiP3m7fr4=", "restaurante"=>{"nome"=>"asdf", "endereco"=>"Asdfasdfas", "especialidade"=>"asf"}, "commit"=>"Grava"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `save' for nil:NilClass):
+  app/controllers/restaurantes_controller.rb:36:in `create'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.7ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2013-07-19 19:09:50 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[35mRestaurante Load (0.6ms)[0m  SELECT `restaurantes`.* FROM `restaurantes` ORDER BY nome
+  Rendered restaurantes/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-19 19:09:50 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-19 19:09:50 -0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2013-07-19 19:09:50 -0300
+Served asset /clientes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comentarios.js?body=1" for 127.0.0.1 at 2013-07-19 19:09:51 -0300
+Served asset /comentarios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-19 19:09:51 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/qualificacoes.js?body=1" for 127.0.0.1 at 2013-07-19 19:09:51 -0300
+Served asset /qualificacoes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2013-07-19 19:09:51 -0300
+Served asset /restaurantes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-19 19:09:51 -0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/clientes" for 127.0.0.1 at 2013-07-19 19:09:52 -0300
+Processing by ClientesController#index as HTML
+  [1m[36mCliente Load (0.3ms)[0m  [1mSELECT `clientes`.* FROM `clientes` [0m
+  Rendered clientes/index.html.erb within layouts/application (63.5ms)
+Completed 200 OK in 134ms (Views: 104.5ms | ActiveRecord: 14.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-19 19:09:52 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-19 19:09:52 -0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-19 19:09:52 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2013-07-19 19:09:52 -0300
+Served asset /clientes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comentarios.js?body=1" for 127.0.0.1 at 2013-07-19 19:09:52 -0300
+Served asset /comentarios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/qualificacoes.js?body=1" for 127.0.0.1 at 2013-07-19 19:09:52 -0300
+Served asset /qualificacoes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2013-07-19 19:09:52 -0300
+Served asset /restaurantes.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-19 19:09:52 -0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2013-07-19 19:09:54 -0300
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (60.7ms)
+  Rendered clientes/new.html.erb within layouts/application (63.2ms)
+Completed 200 OK in 90ms (Views: 89.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-19 19:09:54 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-19 19:09:54 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2013-07-19 19:09:54 -0300
+Served asset /clientes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comentarios.js?body=1" for 127.0.0.1 at 2013-07-19 19:09:54 -0300
+Served asset /comentarios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-19 19:09:54 -0300
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/qualificacoes.js?body=1" for 127.0.0.1 at 2013-07-19 19:09:54 -0300
+Served asset /qualificacoes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2013-07-19 19:09:54 -0300
+Served asset /restaurantes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-19 19:09:54 -0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/clientes" for 127.0.0.1 at 2013-07-19 19:10:00 -0300
+Processing by ClientesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SATSp176rEHX22PAIWI6JPp+mp8X82Ydu2HiP3m7fr4=", "cliente"=>{"nome"=>"Bruna Soder", "idade"=>"12"}, "commit"=>"Create Cliente"}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mCliente Exists (11.5ms)[0m  [1mSELECT 1 AS one FROM `clientes` WHERE `clientes`.`nome` = BINARY 'Bruna Soder' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered clientes/_form.html.erb (4.9ms)
+  Rendered clientes/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 178ms (Views: 18.6ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-19 19:10:00 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:00 -0300
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/comentarios.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:00 -0300
+Served asset /comentarios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:00 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:00 -0300
+Served asset /clientes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/qualificacoes.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:00 -0300
+Served asset /qualificacoes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:00 -0300
+Served asset /restaurantes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:00 -0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/qualificacoes" for 127.0.0.1 at 2013-07-19 19:10:02 -0300
+Processing by QualificacoesController#index as HTML
+  [1m[36mQualificacao Load (9.2ms)[0m  [1mSELECT `qualificacoes`.* FROM `qualificacoes` [0m
+  [1m[35mCliente Load (0.5ms)[0m  SELECT `clientes`.* FROM `clientes` WHERE `clientes`.`id` = 3 LIMIT 1
+  [1m[36mRestaurante Load (0.6ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 4 LIMIT 1[0m
+  [1m[35mCliente Load (0.6ms)[0m  SELECT `clientes`.* FROM `clientes` WHERE `clientes`.`id` = 4 LIMIT 1
+  [1m[36mRestaurante Load (0.4ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 7 LIMIT 1[0m
+  [1m[35mCliente Load (0.4ms)[0m  SELECT `clientes`.* FROM `clientes` WHERE `clientes`.`id` = 2 LIMIT 1
+  [1m[36mRestaurante Load (0.3ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 5 LIMIT 1[0m
+  [1m[35mCliente Load (0.4ms)[0m  SELECT `clientes`.* FROM `clientes` WHERE `clientes`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `clientes`.* FROM `clientes` WHERE `clientes`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `clientes`.* FROM `clientes` WHERE `clientes`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `clientes`.* FROM `clientes` WHERE `clientes`.`id` = 2 LIMIT 1
+  [1m[36mRestaurante Load (0.6ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 3 LIMIT 1[0m
+  Rendered qualificacoes/index.html.erb within layouts/application (99.1ms)
+Completed 200 OK in 183ms (Views: 137.6ms | ActiveRecord: 26.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-19 19:10:02 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:02 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:02 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:02 -0300
+Served asset /clientes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comentarios.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:02 -0300
+Served asset /comentarios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/qualificacoes.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:02 -0300
+Served asset /qualificacoes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:02 -0300
+Served asset /restaurantes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:02 -0300
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/qualificacoes" for 127.0.0.1 at 2013-07-19 19:10:04 -0300
+Processing by QualificacoesController#index as HTML
+  [1m[35mQualificacao Load (0.3ms)[0m  SELECT `qualificacoes`.* FROM `qualificacoes` 
+  [1m[36mCliente Load (0.2ms)[0m  [1mSELECT `clientes`.* FROM `clientes` WHERE `clientes`.`id` = 3 LIMIT 1[0m
+  [1m[35mRestaurante Load (0.2ms)[0m  SELECT `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 4 LIMIT 1
+  [1m[36mCliente Load (0.2ms)[0m  [1mSELECT `clientes`.* FROM `clientes` WHERE `clientes`.`id` = 4 LIMIT 1[0m
+  [1m[35mRestaurante Load (0.1ms)[0m  SELECT `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 7 LIMIT 1
+  [1m[36mCliente Load (0.1ms)[0m  [1mSELECT `clientes`.* FROM `clientes` WHERE `clientes`.`id` = 2 LIMIT 1[0m
+  [1m[35mRestaurante Load (0.2ms)[0m  SELECT `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 5 LIMIT 1
+  [1m[36mCliente Load (0.2ms)[0m  [1mSELECT `clientes`.* FROM `clientes` WHERE `clientes`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `clientes`.* FROM `clientes` WHERE `clientes`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `clientes`.* FROM `clientes` WHERE `clientes`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `clientes`.* FROM `clientes` WHERE `clientes`.`id` = 2 LIMIT 1[0m
+  [1m[35mRestaurante Load (27.2ms)[0m  SELECT `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 3 LIMIT 1
+  Rendered qualificacoes/index.html.erb within layouts/application (60.2ms)
+Completed 200 OK in 74ms (Views: 43.4ms | ActiveRecord: 28.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-19 19:10:04 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/qualificacoes.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:04 -0300
+Served asset /qualificacoes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:04 -0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comentarios.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:04 -0300
+Served asset /comentarios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:04 -0300
+Served asset /clientes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:04 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:04 -0300
+Served asset /restaurantes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:04 -0300
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/qualificacoes/new" for 127.0.0.1 at 2013-07-19 19:10:06 -0300
+Processing by QualificacoesController#new as HTML
+  [1m[36mCliente Load (0.6ms)[0m  [1mSELECT `clientes`.* FROM `clientes` ORDER BY nome[0m
+  [1m[35mRestaurante Load (0.2ms)[0m  SELECT `restaurantes`.* FROM `restaurantes` ORDER BY nome
+  Rendered qualificacoes/_form.html.erb (13.0ms)
+  Rendered qualificacoes/new.html.erb within layouts/application (24.6ms)
+Completed 200 OK in 54ms (Views: 51.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-19 19:10:06 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:06 -0300
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:06 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:06 -0300
+Served asset /clientes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/qualificacoes.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:06 -0300
+Served asset /qualificacoes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comentarios.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:06 -0300
+Served asset /comentarios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:06 -0300
+Served asset /restaurantes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:06 -0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/qualificacoes" for 127.0.0.1 at 2013-07-19 19:10:26 -0300
+Processing by QualificacoesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SATSp176rEHX22PAIWI6JPp+mp8X82Ydu2HiP3m7fr4=", "qualificacao"=>{"cliente_id"=>"1", "restaurante_id"=>"3", "nota"=>"12", "valor_gasto"=>"20"}, "commit"=>"Create Qualificacao"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mCliente Load (0.6ms)[0m  SELECT `clientes`.* FROM `clientes` WHERE `clientes`.`id` = 1 LIMIT 1
+  [1m[36mCliente Exists (28.4ms)[0m  [1mSELECT 1 AS one FROM `clientes` WHERE (`clientes`.`nome` = BINARY 'Fernando Nogueira' AND `clientes`.`id` != 1) LIMIT 1[0m
+  [1m[35mRestaurante Load (0.6ms)[0m  SELECT `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 3 LIMIT 1
+  [1m[36mRestaurante Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM `restaurantes` WHERE (`restaurantes`.`nome` = BINARY 'Danny' AND `restaurantes`.`id` != 3) LIMIT 1[0m
+  [1m[35mRestaurante Exists (0.4ms)[0m  SELECT 1 AS one FROM `restaurantes` WHERE (`restaurantes`.`especialidade` = BINARY 'XII' AND `restaurantes`.`id` != 3) LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered qualificacoes/_form.html.erb (7.5ms)
+  Rendered qualificacoes/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 75ms (Views: 22.6ms | ActiveRecord: 30.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-19 19:10:26 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:26 -0300
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:26 -0300
+Served asset /clientes.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:26 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/qualificacoes.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:26 -0300
+Served asset /qualificacoes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comentarios.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:26 -0300
+Served asset /comentarios.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:26 -0300
+Served asset /restaurantes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:26 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/qualificacoes" for 127.0.0.1 at 2013-07-19 19:10:31 -0300
+Processing by QualificacoesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SATSp176rEHX22PAIWI6JPp+mp8X82Ydu2HiP3m7fr4=", "qualificacao"=>{"cliente_id"=>"1", "restaurante_id"=>"3", "nota"=>"12", "valor_gasto"=>"20"}, "commit"=>"Create Qualificacao"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mCliente Load (0.2ms)[0m  [1mSELECT `clientes`.* FROM `clientes` WHERE `clientes`.`id` = 1 LIMIT 1[0m
+  [1m[35mCliente Exists (0.2ms)[0m  SELECT 1 AS one FROM `clientes` WHERE (`clientes`.`nome` = BINARY 'Fernando Nogueira' AND `clientes`.`id` != 1) LIMIT 1
+  [1m[36mRestaurante Load (0.2ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 3 LIMIT 1[0m
+  [1m[35mRestaurante Exists (0.1ms)[0m  SELECT 1 AS one FROM `restaurantes` WHERE (`restaurantes`.`nome` = BINARY 'Danny' AND `restaurantes`.`id` != 3) LIMIT 1
+  [1m[36mRestaurante Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM `restaurantes` WHERE (`restaurantes`.`especialidade` = BINARY 'XII' AND `restaurantes`.`id` != 3) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered qualificacoes/_form.html.erb (5.3ms)
+  Rendered qualificacoes/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 33ms (Views: 19.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-19 19:10:31 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:31 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comentarios.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:31 -0300
+Served asset /comentarios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:31 -0300
+Served asset /jquery.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/qualificacoes.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:31 -0300
+Served asset /qualificacoes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:31 -0300
+Served asset /clientes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:31 -0300
+Served asset /restaurantes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:31 -0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/qualificacoes" for 127.0.0.1 at 2013-07-19 19:10:36 -0300
+Processing by QualificacoesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SATSp176rEHX22PAIWI6JPp+mp8X82Ydu2HiP3m7fr4=", "qualificacao"=>{"cliente_id"=>"1", "restaurante_id"=>"3", "nota"=>"10", "valor_gasto"=>"20"}, "commit"=>"Create Qualificacao"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mCliente Load (0.2ms)[0m  SELECT `clientes`.* FROM `clientes` WHERE `clientes`.`id` = 1 LIMIT 1
+  [1m[36mCliente Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM `clientes` WHERE (`clientes`.`nome` = BINARY 'Fernando Nogueira' AND `clientes`.`id` != 1) LIMIT 1[0m
+  [1m[35mRestaurante Load (0.1ms)[0m  SELECT `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 3 LIMIT 1
+  [1m[36mRestaurante Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM `restaurantes` WHERE (`restaurantes`.`nome` = BINARY 'Danny' AND `restaurantes`.`id` != 3) LIMIT 1[0m
+  [1m[35mRestaurante Exists (0.1ms)[0m  SELECT 1 AS one FROM `restaurantes` WHERE (`restaurantes`.`especialidade` = BINARY 'XII' AND `restaurantes`.`id` != 3) LIMIT 1
+  [1m[36mSQL (349.8ms)[0m  [1mINSERT INTO `qualificacoes` (`cliente_id`, `created_at`, `nota`, `restaurante_id`, `updated_at`, `valor_gasto`) VALUES (1, '2013-07-19 22:10:36', 10.0, 3, '2013-07-19 22:10:36', 20.0)[0m
+  [1m[35m (122.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/qualificacoes/10
+Completed 302 Found in 489ms (ActiveRecord: 473.1ms)
+
+
+Started GET "/qualificacoes/10" for 127.0.0.1 at 2013-07-19 19:10:37 -0300
+Processing by QualificacoesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mQualificacao Load (0.4ms)[0m  [1mSELECT `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`id` = 10 LIMIT 1[0m
+  [1m[35mCliente Load (0.2ms)[0m  SELECT `clientes`.* FROM `clientes` WHERE `clientes`.`id` = 1 LIMIT 1
+  [1m[36mRestaurante Load (0.1ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 3 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 10 AND `comentarios`.`comentavel_type` = 'Qualificacao'
+  Rendered comentarios/_comentarios.html.erb (29.9ms)
+  Rendered comentarios/_novo_comentario.html.erb (10.6ms)
+  Rendered qualificacoes/show.html.erb within layouts/application (119.9ms)
+Completed 200 OK in 178ms (Views: 161.4ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-19 19:10:37 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/qualificacoes.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:37 -0300
+Served asset /qualificacoes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comentarios.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:37 -0300
+Served asset /comentarios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:37 -0300
+Served asset /clientes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:37 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:37 -0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:37 -0300
+Served asset /restaurantes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:37 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2013-07-19 19:10:41 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[36mRestaurante Load (0.2ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes` ORDER BY nome[0m
+  Rendered restaurantes/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-19 19:10:41 -0300
+Served asset /application.css - 304 Not Modified (39ms)
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:41 -0300
+Served asset /clientes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:41 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comentarios.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:41 -0300
+Served asset /comentarios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/qualificacoes.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:41 -0300
+Served asset /qualificacoes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:41 -0300
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:41 -0300
+Served asset /restaurantes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:41 -0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/clientes" for 127.0.0.1 at 2013-07-19 19:10:43 -0300
+Processing by ClientesController#index as HTML
+  [1m[35mCliente Load (0.2ms)[0m  SELECT `clientes`.* FROM `clientes` 
+  Rendered clientes/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 22ms (Views: 19.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-19 19:10:43 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:43 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:43 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:43 -0300
+Served asset /clientes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comentarios.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:43 -0300
+Served asset /comentarios.js - 304 Not Modified (48ms)
+
+
+Started GET "/assets/qualificacoes.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:43 -0300
+Served asset /qualificacoes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:43 -0300
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2013-07-19 19:10:43 -0300
+Served asset /restaurantes.js - 304 Not Modified (0ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2013-07-19 19:13:26 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[36mRestaurante Load (0.1ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes` ORDER BY nome[0m
+  Rendered restaurantes/index.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 37ms (Views: 33.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-19 19:13:27 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-19 19:13:27 -0300
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-19 19:13:27 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2013-07-19 19:13:27 -0300
+Served asset /clientes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/qualificacoes.js?body=1" for 127.0.0.1 at 2013-07-19 19:13:27 -0300
+Served asset /qualificacoes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comentarios.js?body=1" for 127.0.0.1 at 2013-07-19 19:13:27 -0300
+Served asset /comentarios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2013-07-19 19:13:27 -0300
+Served asset /restaurantes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-19 19:13:27 -0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/restaurantes/new" for 127.0.0.1 at 2013-07-19 19:13:29 -0300
+Processing by RestaurantesController#new as HTML
+  Rendered restaurantes/_form.html.erb (3.8ms)
+  Rendered restaurantes/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-19 19:13:29 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-19 19:13:29 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-19 19:13:29 -0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2013-07-19 19:13:29 -0300
+Served asset /clientes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comentarios.js?body=1" for 127.0.0.1 at 2013-07-19 19:13:29 -0300
+Served asset /comentarios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/qualificacoes.js?body=1" for 127.0.0.1 at 2013-07-19 19:13:29 -0300
+Served asset /qualificacoes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-19 19:13:29 -0300
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2013-07-19 19:13:29 -0300
+Served asset /restaurantes.js - 304 Not Modified (0ms)
+
+
+Started POST "/restaurantes" for 127.0.0.1 at 2013-07-19 19:13:33 -0300
+Processing by RestaurantesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SATSp176rEHX22PAIWI6JPp+mp8X82Ydu2HiP3m7fr4=", "restaurante"=>{"nome"=>"Boa jose", "endereco"=>"Rua do apiares", "especialidade"=>"Polenta"}, "commit"=>"Grava"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mRestaurante Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM `restaurantes` WHERE `restaurantes`.`nome` = BINARY 'Boa jose' LIMIT 1[0m
+  [1m[35mRestaurante Exists (0.4ms)[0m  SELECT 1 AS one FROM `restaurantes` WHERE `restaurantes`.`especialidade` = BINARY 'Polenta' LIMIT 1
+  [1m[36mSQL (11.6ms)[0m  [1mINSERT INTO `restaurantes` (`created_at`, `endereco`, `especialidade`, `nome`, `updated_at`) VALUES ('2013-07-19 22:13:33', 'Rua do apiares', 'Polenta', 'Boa jose', '2013-07-19 22:13:33')[0m
+  [1m[35m (30.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/restaurantes/8
+Completed 302 Found in 57ms (ActiveRecord: 43.6ms)
+
+
+Started GET "/restaurantes/8" for 127.0.0.1 at 2013-07-19 19:13:33 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mRestaurante Load (0.6ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 8 LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 8 AND `comentarios`.`comentavel_type` = 'Restaurante'
+  Rendered comentarios/_comentarios.html.erb (15.4ms)
+  [1m[36m (0.6ms)[0m  [1mSELECT AVG(`qualificacoes`.`nota`) AS avg_id FROM `qualificacoes` WHERE `qualificacoes`.`restaurante_id` = 8[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `qualificacoes` WHERE `qualificacoes`.`restaurante_id` = 8
+  [1m[36m (0.4ms)[0m  [1mSELECT AVG(`qualificacoes`.`valor_gasto`) AS avg_id FROM `qualificacoes` WHERE `qualificacoes`.`restaurante_id` = 8[0m
+  Rendered comentarios/_novo_comentario.html.erb (19.4ms)
+  Rendered restaurantes/show.html.erb within layouts/application (111.9ms)
+Completed 200 OK in 146ms (Views: 136.2ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-19 19:13:34 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-19 19:13:34 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/qualificacoes.js?body=1" for 127.0.0.1 at 2013-07-19 19:13:34 -0300
+Served asset /qualificacoes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comentarios.js?body=1" for 127.0.0.1 at 2013-07-19 19:13:34 -0300
+Served asset /comentarios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2013-07-19 19:13:34 -0300
+Served asset /clientes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-19 19:13:34 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2013-07-19 19:13:34 -0300
+Served asset /restaurantes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-19 19:13:34 -0300
+Served asset /application.js - 304 Not Modified (2ms)
