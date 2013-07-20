@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+gem 'paperclip'
+gem 'kaminari'
+gem 'mailcatcher'
+
 gem 'rails', '3.2.11'
 
 # Bundle edge Rails instead:

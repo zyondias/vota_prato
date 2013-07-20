@@ -6,8 +6,9 @@ class RestaurantesController < ApplicationController
 	#metodo que sera chamado na index
 	def index
 		#retornando a lista de nome
-		@restaurantes = Restaurante.order :nome
-
+		#@restaurantes = Restaurante.order :nome
+		#deixando paginando com kaminari
+    @restaurantes = Restaurante.order("nome").page(params['page']).per(3)
 		#verificando qual formato foi solicitado para poder retorna ou html ou jsnon ou xml
 		respond_to do |format|
 			format.html

@@ -13,7 +13,9 @@ class Restaurante < ActiveRecord::Base
 
 
   #deixa disponivel para poder grava no banco aparti de um formulario ou iput url ou hash
-  attr_accessible :nome, :endereco, :especialidade
+  attr_accessible :nome, :endereco, :especialidade, :foto
+  #propriedades da foto
+  has_attached_file :foto, styles: {medium: "300x300", thumb: "100x100"}
 
   #validador proto do rails para vailidar contem nome e endereco
   validates_presence_of :nome, :message => 'Digitar um nome por favor'

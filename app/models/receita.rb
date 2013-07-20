@@ -7,7 +7,7 @@ class Receita < ActiveRecord::Base
    belongs_to :prato
 
   #validacao
-  validates_presnce_of :conteudo, :message: " -  deve ser prenchido"
+  validates_presnce_of :conteudo, message: " -  deve ser prenchido"
 
   #validando o relacionamento 
   validates_presnce_of :prato_id
